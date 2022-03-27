@@ -35,8 +35,8 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     )
     quit(1)
  
-BOT_ID = 1510976996
-BOT_USERNAME = "Senkubest_bot"
+BOT_ID = 5169508699
+BOT_USERNAME = "micchon_shikimori_bot"
 
 ENV = bool(os.environ.get("ENV", False))
 
