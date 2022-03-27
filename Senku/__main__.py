@@ -106,7 +106,7 @@ HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
 KURUMI_IMG = "https://telegra.ph/file/78a95df585a55187568ee.jpg"
-SENKUSTART = "https://telegra.ph/file/c6a6564f8175d9303a61a.mp4"
+SENKUSTART = https://telegra.ph/file/1612462427f088ccbdf5b.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @SenkuIshigamiXD \
@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            SENKUSTART, caption= "<b>I have been unpetrified since:</b> <code>{}</code> \n<b>This is Exhilarating</b>"
+            SENKUSTART, caption= "<b>I have been awake and serving my master since :</b> <code>{}</code> \n<b>UwU</b>"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
