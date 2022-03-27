@@ -106,7 +106,7 @@ HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
 KURUMI_IMG = "https://telegra.ph/file/78a95df585a55187568ee.jpg"
-SENKUSTART = https://telegra.ph/file/1612462427f088ccbdf5b.jpg"
+SENKUSTART = "https://telegra.ph/file/1612462427f088ccbdf5b.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @SenkuIshigamiXD \
