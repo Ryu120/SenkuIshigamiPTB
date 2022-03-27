@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            SENKUSTART, caption= "<b>I have been awake and serving my master since :</b> <code>{}</code> \n<b>UwU</b>"
+            SENKUSTART, caption= "<b>I have been awake and serving my master @SOME1HING since :</b> <code>{}</code> \n"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
