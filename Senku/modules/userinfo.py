@@ -277,26 +277,26 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Power level of this person is 'Village Founder Senku'."
+        text += "\n\nThis person is my only 'Boyfriend' and He belongs to Me."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThe Power level of this person is 'Science User Chrome'."
+        text += "\n\nThis person is my 'Best Friend'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Power level of this person is 'Mentalist Gen'."
+        text += "\n\nThis person is my 'Friend'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Power level of this person is 'Archer Ukyo'."
+        text += "\n\nThis person is my 'Servant'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Power level of this person is 'Warrior Ginro'."
+        text += "\n\nThis person is just a 'Peasant'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Power level of this person is 'Village Guard Kinro'."
+        text += "\n\nThis person is just a 'Slave'."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/SenkubotUpdates/4">?</a>]'.format(
+        text += ' [<a href="https://t.me/Shikimori_bot_Updates/6">?</a>]'.format(
             bot.username)
 
     try:
