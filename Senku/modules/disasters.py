@@ -659,7 +659,7 @@ UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removeslave"), removew
 
 WHITELISTLIST_HANDLER = CommandHandler(["slavelist", "slaves"], whitelistlist)
 TIGERLIST_HANDLER = CommandHandler(["peasantlist", "peasants"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler(["servantlist", "servents"], supportlist)
+SUPPORTLIST_HANDLER = CommandHandler(["servantlist", "servants"], supportlist)
 SUDOLIST_HANDLER = CommandHandler(["friendlist", "friends"], sudolist)
 DEVLIST_HANDLER = CommandHandler(["devlist", "bestfriends"], devlist)
 
