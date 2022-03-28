@@ -648,20 +648,20 @@ def devlist(update: Update, context: CallbackContext):
 # Visit @{SUPPORT_CHAT} for more information.
 # """
 
-SUDO_HANDLER = CommandHandler(("addsudo", "adddragon"), addsudo)
-SUPPORT_HANDLER = CommandHandler(("addsupport", "adddemon"), addsupport)
-TIGER_HANDLER = CommandHandler(("addtiger"), addtiger)
-WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addwolf"), addwhitelist)
-UNSUDO_HANDLER = CommandHandler(("removesudo", "removedragon"), removesudo)
-UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removedemon"), removesupport)
-UNTIGER_HANDLER = CommandHandler(("removetiger"), removetiger)
-UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removewolf"), removewhitelist)
+SUDO_HANDLER = CommandHandler(("addfriend", "addsudo"), addsudo)
+SUPPORT_HANDLER = CommandHandler(("addsupport", "addservant"), addsupport)
+TIGER_HANDLER = CommandHandler(("addpeasant"), addtiger)
+WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addslave"), addwhitelist)
+UNSUDO_HANDLER = CommandHandler(("removesudo", "removefriend"), removesudo)
+UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removeservant"), removesupport)
+UNTIGER_HANDLER = CommandHandler(("removepeasant"), removetiger)
+UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removeslave"), removewhitelist)
 
-WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlist)
-TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "demons"], supportlist)
-SUDOLIST_HANDLER = CommandHandler(["sudolist", "dragons"], sudolist)
-DEVLIST_HANDLER = CommandHandler(["devlist", "heroes"], devlist)
+WHITELISTLIST_HANDLER = CommandHandler(["slavelist", "slaves"], whitelistlist)
+TIGERLIST_HANDLER = CommandHandler(["peasantlist", "peasants"], tigerlist)
+SUPPORTLIST_HANDLER = CommandHandler(["servantlist", "servents"], supportlist)
+SUDOLIST_HANDLER = CommandHandler(["friendlist", "friends"], sudolist)
+DEVLIST_HANDLER = CommandHandler(["devlist", "bestfriends"], devlist)
 
 dispatcher.add_handler(SUDO_HANDLER)
 dispatcher.add_handler(SUPPORT_HANDLER)
