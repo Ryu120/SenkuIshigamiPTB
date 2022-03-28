@@ -95,7 +95,7 @@ TRUTH = (
 
     "How many selfies do you take a day?",
 
-    "Meatloaf says he'd do anything for love, but he won't do “that.” What's your “that?"
+    "Meatloaf says he'd do anything for love, but he won't do “that.” What's your “that?",
 
     "How many times a week do you wear the same pants?",
 
@@ -192,7 +192,7 @@ TRUTH = (
 
     "What's the smallest tip you've ever left at a restaurant?",
 
-    "Have you ever regretted something you did to get a crush or partner's attenti   "
+    "Have you ever regretted something you did to get a crush or partner's attention?",
     "What's one job you could never do?",
 
     "Have you ever ghosted a friend?",
@@ -201,7 +201,7 @@ TRUTH = (
 
     "What's the most scandalous photo in your cloud?",
 
-    "If you switched genders for a day, what would you   "
+    "If you switched genders for a day, what would you do?",
     "How many photo editing apps do you have on your phone?",
 
 
@@ -510,6 +510,6 @@ DARE = (
     "You think I am joking?",
     "Do 10 squats",
     "Do jumping jacks for 1 minute",
-    "Do 5 puchups",
+    "Do 5 pushups",
     "Be a slave of Shikimori-san",
 )
