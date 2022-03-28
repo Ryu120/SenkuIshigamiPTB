@@ -507,7 +507,7 @@ DARE = (
     "You can't do it",
     "Don't even try",
     "You seriously can't do it",
-    "You think I am joking?",",
+    "You think I am joking?",
     "Do 10 squats",
     "Do jumping jacks for 1 minute",
     "Do 5 puchups",
