@@ -9,7 +9,7 @@ from Senku.events import register
 from Senku import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/2b901d36fcf5999d9a001.mp4"
+PHOTO = "https://telegra.ph/file/2b04f7812f22b983f8a10.mp4"
 
 @register(pattern=("/alive"))
 async def awake(event):
