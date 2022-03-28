@@ -2,7 +2,7 @@ import html
 import random
 import time
 
-import Senku.modules.fun_strings as fun_strings
+import Senku.modules.ExtraGifs_strings as ExtraGifs_strings
 from Senku import dispatcher
 from Senku.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 from Senku.modules.helper_funcs.chat_status import is_user_admin
@@ -16,7 +16,7 @@ GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr
 
 @run_async
 def runs(update: Update, context: CallbackContext):
-    update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
+    update.effective_message.reply_text(random.choice(ExtraGifs_strings.RUN_STRINGS))
 
 
 @run_async
@@ -48,7 +48,7 @@ def sanitize(update: Update, context: CallbackContext):
         if message.reply_to_message
         else message.reply_animation
     )
-    reply_animation(random.choice(fun_strings.GIFS), caption=f"*Sanitizes {name}*")
+    reply_animation(random.choice(ExtraGifs_strings.GIFS), caption=f"*Sanitizes {name}*")
 
 
 @run_async
@@ -67,7 +67,7 @@ def slap(update: Update, context: CallbackContext):
     user_id = extract_user(message, args)
 
     if user_id == bot.id:
-        temp = random.choice(fun_strings.SLAP_YONE_TEMPLATES)
+        temp = random.choice(ExtraGifs_strings.SLAP_YONE_TEMPLATES)
 
         if isinstance(temp, list):
             if temp[2] == "tmute":
@@ -97,10 +97,10 @@ def slap(update: Update, context: CallbackContext):
         user1 = bot.first_name
         user2 = curr_user
 
-    temp = random.choice(fun_strings.SLAP_TEMPLATES)
-    item = random.choice(fun_strings.ITEMS)
-    hit = random.choice(fun_strings.HIT)
-    throw = random.choice(fun_strings.THROW)
+    temp = random.choice(ExtraGifs_strings.SLAP_TEMPLATES)
+    item = random.choice(ExtraGifs_strings.ITEMS)
+    hit = random.choice(ExtraGifs_strings.HIT)
+    throw = random.choice(ExtraGifs_strings.THROW)
 
     if update.effective_user.id == 1096215023:
         temp = "@NeoTheKitty scratches {user2}"
@@ -133,20 +133,20 @@ def pat(update: Update, context: CallbackContext):
     pat_type = random.choice(("Text", "Gif", "Sticker"))
     if pat_type == "Gif":
         try:
-            temp = random.choice(fun_strings.PAT_GIFS)
+            temp = random.choice(ExtraGifs_strings.PAT_GIFS)
             reply_to.reply_animation(temp)
         except BadRequest:
             pat_type = "Text"
 
     if pat_type == "Sticker":
         try:
-            temp = random.choice(fun_strings.PAT_STICKERS)
+            temp = random.choice(ExtraGifs_strings.PAT_STICKERS)
             reply_to.reply_sticker(temp)
         except BadRequest:
             pat_type = "Text"
 
     if pat_type == "Text":
-        temp = random.choice(fun_strings.PAT_TEMPLATES)
+        temp = random.choice(ExtraGifs_strings.PAT_TEMPLATES)
         reply = temp.format(user1=user1, user2=user2)
         reply_to.reply_text(reply, parse_mode=ParseMode.HTML)
 
@@ -173,7 +173,7 @@ def shout(update: Update, context: CallbackContext):
 
 @run_async
 def toss(update: Update, context: CallbackContext):
-    update.message.reply_text(random.choice(fun_strings.TOSS))
+    update.message.reply_text(random.choice(ExtraGifs_strings.TOSS))
 
 
 @run_async
@@ -198,9 +198,9 @@ def bluetext(update: Update, context: CallbackContext):
 
 @run_async
 def rlg(update: Update, context: CallbackContext):
-    eyes = random.choice(fun_strings.EYES)
-    mouth = random.choice(fun_strings.MOUTHS)
-    ears = random.choice(fun_strings.EARS)
+    eyes = random.choice(ExtraGifs_strings.EYES)
+    mouth = random.choice(ExtraGifs_strings.MOUTHS)
+    ears = random.choice(ExtraGifs_strings.EARS)
 
     if len(eyes) == 2:
         repl = ears[0] + eyes[0] + mouth[0] + eyes[1] + ears[1]
@@ -216,7 +216,7 @@ def decide(update: Update, context: CallbackContext):
         if update.effective_message.reply_to_message
         else update.effective_message.reply_text
     )
-    reply_text(random.choice(fun_strings.DECIDE))
+    reply_text(random.choice(ExtraGifs_strings.DECIDE))
 
 
 @run_async
@@ -226,7 +226,7 @@ def eightball(update: Update, context: CallbackContext):
         if update.effective_message.reply_to_message
         else update.effective_message.reply_text
     )
-    reply_text(random.choice(fun_strings.EIGHTBALL))
+    reply_text(random.choice(ExtraGifs_strings.EIGHTBALL))
 
 
 @run_async
@@ -236,7 +236,7 @@ def table(update: Update, context: CallbackContext):
         if update.effective_message.reply_to_message
         else update.effective_message.reply_text
     )
-    reply_text(random.choice(fun_strings.TABLE))
+    reply_text(random.choice(ExtraGifs_strings.TABLE))
 
 
 normiefont = [
