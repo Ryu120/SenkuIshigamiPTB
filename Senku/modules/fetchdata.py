@@ -15,7 +15,7 @@ ids = {
     'WC': 1
 }
 base = 'https://api.football-data.org/v2/'
-headers = {
+# headers = {
     'X-Auth-Token':api_key
 }
 def get_comp(id):
