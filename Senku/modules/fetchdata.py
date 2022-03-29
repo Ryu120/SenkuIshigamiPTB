@@ -15,8 +15,8 @@ ids = {
     'WC': 1
 }
 base = 'https://api.football-data.org/v2/'
-# headers = {
-    'X-Auth-Token':api_key
+headers = {
+    #'X-Auth-Token':api_key
 }
 def get_comp(id):
     resp = requests.get(f'{base}competitions/{id}', headers=headers)
