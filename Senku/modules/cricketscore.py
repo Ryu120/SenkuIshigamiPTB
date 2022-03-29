@@ -19,7 +19,7 @@ async def is_register_admin(chat, user):
         return True
 
 
-@tbot.on(events.NewMessage(pattern="/cs$"))
+@tbot.on(events.NewMessage(pattern="/c$"))
 async def _(event):
     if event.fwd_from:
         return
