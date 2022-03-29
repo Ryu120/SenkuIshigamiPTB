@@ -203,14 +203,14 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"Senku just joined the chat"
+                    f"My Boyfriend just joined the chat"
                 )
                 continue
 
             # Welcome Devs
             if new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! A Chrome just joined!",
+                    "Whoa! My Bestfriend just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -218,7 +218,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Sudos
             if new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Huh! Gen just joined! Stay Alert!",
+                    "Huh! My Friend just joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -226,7 +226,15 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Support
             if new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "Huh! Someone with Kinro just joined!",
+                    "Huh! One of my Servant just joined!",
+                    reply_to_message_id=reply,
+                )
+                continue
+             
+            # Welcome TIGERS
+            if new_mem.id in TIGERS:
+                update.effective_message.reply_text(
+                    "Huh! A Peasant just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -234,7 +242,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome WOLVES
             if new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "Oof! A Soldier Users just joined!", reply_to_message_id=reply
+                    "Oof! A Slave just joined!", reply_to_message_id=reply
                 )
                 continue
 
