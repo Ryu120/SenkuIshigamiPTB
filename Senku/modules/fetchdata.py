@@ -4,7 +4,7 @@ import time as tim
 accepted_initials = ['PL',  'PD', 'BL1', 'FL1',"SA",  "CL", "WC"] #look at football-data.org to add other competitions
 # if you want to use a different api change process and get matches. format match data in the same way. 
 # Watch out for utcdate!
-api_key = os.environ[__apikey__]
+# api_key = os.environ[__apikey__]
 ids = {
     'PL':733,
     'PD':380,
