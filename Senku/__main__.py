@@ -96,7 +96,7 @@ buttons = [
         InlineKeyboardButton(text=" 💬Commands", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🚨Support Grp", url="https://t.me/Shikimori_bot_Support"),
+        InlineKeyboardButton(text="🚨Support Grp", url="https://t.me/tyranteyeeee"),
         InlineKeyboardButton(text="❗Updates", url="https://t.me/Shikimori_bot_Updates"),
    
     ], 
@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            SENKUSTART, caption= "<b>I have been awake and serving my master @SOME1HING since :</b> <code>{}</code> \n"
+            SENKUSTART, caption= "<b>I have been awake and serving my manager @Sneha_UwU_OwO since :</b> <code>{}</code> \n"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
