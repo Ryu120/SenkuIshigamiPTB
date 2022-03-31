@@ -277,7 +277,9 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person is my only 'Boyfriend' and He belongs to Me."
+        text += "\n\nThis person is my 'Manager"."
+    elif user.id == 949365920:
+        text += "\n\nThis person is 'Owner'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
         text += "\n\nThis person is my 'Best Friend'."
