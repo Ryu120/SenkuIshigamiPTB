@@ -277,7 +277,7 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person is my 'Manager"."
+        text += "\n\nThis person is my 'Manager'."
     elif user.id == 949365920:
         text += "\n\nThis person is 'Owner'."
         disaster_level_present = True
